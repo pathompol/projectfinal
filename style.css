@@ -1,0 +1,375 @@
+/* Table of content */
+/*
+1.section setting
+2.section blog 
+3.section footer
+5.section navbar
+6.section page-title
+7.section timeline
+8.section star
+*/
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+*
+{
+    font-family: 'Prompt', sans-serif;
+}
+/*000000-2b2b2b-6f9ceb-98b9f2-918ef4 โทนสี*/
+html , body
+{
+    height: 100%;
+    
+}
+
+/*section Navbar */
+.bg-alpha 
+{
+    background: rgba(0, 0, 0, 0.822);
+}
+@media(max-width:480px)
+{
+    .navbar-brand
+    {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    }
+}
+
+/* section pagetitile */
+.page-image
+{
+    padding: 200px 0px 120px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+/* เส้นdropdown */
+hr:not([size]) {
+    height: 2px;
+    color: tan;
+}
+
+/* carosel */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-inner .active
+{
+    height: 100%;
+}
+/* เอาไว้กำหนดขนาด */
+.carousel-img
+{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+}
+/* จัดกึ่งกลางขนาดตัวอักษรcarousel */
+.carousel-caption
+{
+    top: 55%;
+}
+/* สีพื้นหลังของCarousel เอาไว้ปรับความชัดสว่างของbg */
+.backscreen
+{
+    background: rgba(0, 0, 0,0.5);
+    height: 100%;
+}
+/* ความห่างของบนล่าง */
+.jumbotron
+{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+/* เส้นใต้ข้อความก่อน */
+.border-short-bottom
+{
+    position: relative;
+    padding: 20px 0; 
+    margin-bottom: 25px;
+}
+/* เส้นใต้ข้อความหลัง */
+.border-short-bottom::after
+{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    background: #595959;
+}
+
+/* section blog */
+/* ปรับขนาดรู)ให้เป็น16/9 */
+.warpper-card-img
+{
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+.warpper-card-img img
+{
+   position: absolute;
+   top: 0;
+   transition: 1s;
+}
+.warpper-card-img img:hover
+{
+   transform:scale(1.1) ;
+}
+
+.btn-group-custom button
+{
+    margin-bottom: 0.5rem;
+    width: 100px;
+}
+
+.btn-group-custom a:hover
+{
+    text-decoration: none;
+}
+
+.blog-content
+{
+    padding: 50px 100px;
+    box-shadow: 0px 0px 10px #a5a5a5;
+}  
+.owl-carousel .card-body{
+    height: 150px;
+    overflow: hidden;
+}
+
+
+
+
+@media (max-width:991px)
+{
+    blog-content
+    {
+        padding: 40px 50px;
+        
+    }
+}
+@media (max-width:768px)
+{
+    .blog-content
+    {
+        padding: 20px 30px;
+        
+    }
+}
+.blog-content h1
+{
+    text-align: center;
+}
+
+
+
+/* Section footer */
+.semi-footer
+{
+    background-color:#2b2b2b ;
+    color: #dcdcdc;
+}
+.semi-footer a
+{
+    color: #dcdcdc;
+}
+.semi-footer li .active > a
+{
+    color: #fff;
+}
+.semi-footer h4
+{
+    color: #6f9ceb;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+}
+.footer 
+{
+    background: #2b2b2b;
+    color: white;
+    font-size: 1rem;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+
+#navbar
+{
+    padding: 25px;
+    transition: 0.5s;
+}
+
+/* section Page title */
+
+/*  Section timeline */
+.timeline {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline::before {
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background: #e6e6e6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+li>.timeline-badge {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #84ba3f;
+    left: 50%;
+    margin-left: -9px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 5px #fff;
+    top: 15px;
+}
+
+li>.timeline-badge::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 25px;
+    height: 2px;
+    background: #e6e6e6;
+}
+
+li.inverted>.timeline-badge::before {
+    right: -32px;
+}
+
+li>.timeline-badge p {
+    width: 200px;
+    margin-top: -9px;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+li.inverted>.timeline-badge p {
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+}
+
+li>.timeline-card {
+    position: relative;
+    width: 46%;
+    float: left;
+    text-align: right;
+    padding: 0 10px;
+}
+
+li.inverted>.timeline-card {
+    float: right;
+    text-align: left;
+}
+
+.timeline>li::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.timeline-arrow {
+    width: 100%;
+    text-align: center;
+    bottom: -70px;
+    color: #e6e6e6;
+}
+
+@media (max-width: 768px) {
+    .timeline::before,
+    .timeline-badge {
+        left: 40px !important;
+    }
+    .timeline-badge::before {
+        right: -32px !important;
+    }
+    .timeline-badge p,
+    li.inverted>.timeline-badge p {
+        margin-left: 50px !important;
+        text-align: left;
+        float: left;
+    }
+    li>.timeline-card {
+        width: 100%;
+        text-align: left;
+        padding: 37px 0 0 85px;
+    }
+    .timeline-arrow {
+        text-align: left;
+        left: 0;
+    }
+    .timeline-arrow {
+        padding-left: 32px;
+    }
+}
+
+/* Section Star */
+/* ☆ ★ */
+.star-rating
+{
+    position: relative;
+    font-size: 2em;
+    color: gold;
+    display: inline-block;
+}
+.star-current
+{
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* section on to top */
+.to-top
+{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background:#6f9ceb;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    z-index: 9999;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.to-top:hover
+{
+    color: white;
+    background: yellow;
+}
